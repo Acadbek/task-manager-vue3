@@ -16,8 +16,8 @@ export default {
       return images("./" + path);
     },
     remove() {
-      this.$emit('remove', this.index)
-    }
+      this.$emit("remove", this.index);
+    },
   },
 };
 </script>

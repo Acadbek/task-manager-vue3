@@ -1,8 +1,6 @@
 <template>
   <form @submit.prevent="add" class="bg-white p-5 rounded-lg">
-    <p class="bg-[#4c1d95] text-white !w-full py-2 text-center">
-      Edit
-    </p>
+    <p class="bg-[#4c1d95] text-white !w-full py-2 text-center">Edit</p>
     <label
       class="block text-[#bbb] uppercase text-sm font-bold tracking-tighter mt-5 mr-0 mb-3 ml-0"
       >Title:</label

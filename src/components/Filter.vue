@@ -2,21 +2,27 @@
   <div class="flex items-center justify-center">
     <nav class="flex gap-3">
       <button
-        :class="{ 'text-white border border-1 border-blue-800': current === 'all' }"
+        :class="{
+          'text-white border border-1 border-blue-800': current === 'all',
+        }"
         @click="sort('all')"
         class="rounded-md active:scale-95 bg-blue-500 text-white px-4 py-2"
       >
         All
       </button>
       <button
-        :class="{ 'text-white border border-1 border-blue-800': current === 'completed' }"
+        :class="{
+          'text-white border border-1 border-blue-800': current === 'completed',
+        }"
         @click="sort('completed')"
         class="rounded-md active:scale-95 bg-blue-500 text-white px-4 py-2"
       >
         Completed
       </button>
       <button
-        :class="{ 'text-white border border-1 border-blue-800': current === 'process' }"
+        :class="{
+          'text-white border border-1 border-blue-800': current === 'process',
+        }"
         @click="sort('process')"
         class="rounded-md active:scale-95 bg-blue-500 text-white px-4 py-2"
       >
@@ -30,8 +36,7 @@
 export default {
   props: ["current"],
   data() {
-    return {
-    };
+    return {};
   },
   methods: {
     sort(from) {
@@ -40,10 +45,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.active {
-  border: solid 2px red;
-	color: #fff;
-}
-</style>
